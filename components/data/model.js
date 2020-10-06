@@ -6,22 +6,23 @@ const mySchema = new Schema({
     station: {
         type: Schema.ObjectId,
         ref: 'Station',
+        required: [true, "Station required"]
     },
     temp: {
         type: String,
-        required: true,
+        required: [true, "Temp required"]
     },
     devicetemp: {
         type: String,
-        required: true,
+        required: [true, "Devicetemp required"]
     },
     humidity: {
         type: String,
-        required: true,
+        required: [true, "Humidity required"]
     },
     rainintensity: {
         type: String,
-        required: true,
+        required: [true, "Rain intensity required"]
     },
     date: { type: Date, default: Date.now }
 });

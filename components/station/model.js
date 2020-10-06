@@ -5,17 +5,17 @@ const Schema = mongoose.Schema;
 const mySchema = new Schema({
     name: {
         type: String,
- 
+
         uppercase: true,
-        required: [true,"Nombre requerido"]
+        required: [true, "Name required"]
     },
     latitude: {
         type: String,
-        required:[true,"Latitud requerido"]
+        required: [true, "Latitude required"]
     },
     longitude: {
         type: String,
-        required:[true,"Longitud requerido"]
+        required: [true, "Longitude required"]
     },
     state: {
         type: Boolean,

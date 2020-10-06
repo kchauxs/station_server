@@ -5,15 +5,15 @@ const Schema = mongoose.Schema;
 const mySchema = new Schema({
     name: {
         type: String,
-        required: true,
+        required: [true, "Name required"]
     },
     email: {
         type: String,
-        required: true,
+        required: [true, "Email required"]
     },
     password: {
         type: String,
-        required: true,
+        required: [true, "Password required"]
     },
     img: {
         type: String,
